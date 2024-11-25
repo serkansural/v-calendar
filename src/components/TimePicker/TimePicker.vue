@@ -57,7 +57,7 @@ import BaseSelect from '../BaseSelect/BaseSelect.vue';
 import { createTimePicker } from '../../use/timePicker';
 
 const props = defineProps<{
-  position: number;
+  position: any;
 }>();
 
 const timePicker = createTimePicker(props);

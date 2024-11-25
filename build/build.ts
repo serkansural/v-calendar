@@ -6,7 +6,7 @@ const formats: BuildFormat[] = ['es', 'mjs', 'cjs', 'iife'];
 
 async function executeBuild() {
   // Build types
-  execSync('vue-tsc --declaration --emitDeclarationOnly --outDir dist/types', {
+  execSync('vue-tsc --noEmit --outDir dist/types', {
     stdio: 'inherit',
   });
 
